@@ -1,0 +1,10 @@
+<div>
+  <img src="{{product.imageURL}}" alt="product image">
+  <h5>{{product.title}}</h5>
+  <h5>${{product.price}}</h5>
+  <button (click)="delete(product._id)">Delete</button>
+  <button (click)="editClicked()">Edit</button>
+</div>
+<div *ngIf="editing">
+  <app-edit [product]="product" (editDone)="contactParent()"></app-edit>
+</div>

@@ -1,0 +1,9 @@
+<form (submit)="create()">
+  <label for="">Title: </label>
+  <input type="text" name="title" [(ngModel)]="productTitle" id=""><br>
+  <label for="">Price: </label>
+  <input type="text" name="title" [(ngModel)]="productPrice" id=""><br>
+  <label for="">Image URL: </label>
+  <input type="text" name="title" [(ngModel)]="imageURL" id=""><br>
+  <input type="submit" name="" id="" (click)="create()" [routerLink]="['/']">
+</form>
